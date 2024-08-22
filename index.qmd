@@ -1,0 +1,167 @@
+---
+title: "Databrary spreadsheet"
+subtitle: "Where we are; where we're going"
+author: "Rick Gilmore"
+format: 
+  revealjs:
+    footer: "[Databrary 2.0 spreadsheet](index.html)"
+    slide-number: true
+---
+
+## Overview
+
+- Databrary 1.0 spreadsheet
+- Databrary 2.0 vision
+
+## DB 1.0 spreadsheet data model
+
+```{mermaid}
+flowchart TD
+  A[person] --> I([id])
+  A --> B([birthdate])
+  A --> F([gender])
+  A --> G([language])
+  A --> L([race])
+  A --> M([ethnicity])
+  A --> N([birthweight])
+  A --> O([pregnancy term])
+  A --> P([disability])
+```
+
+---
+
+```{mermaid}
+flowchart TD
+  E[person_1] --> A[session]
+  N[person_2] -.-> A
+  A --> G([id])
+  A --> I([release])
+  A --> F([test date])
+  A --> H([name])
+  A --> B[group]
+  A --> D[context]
+  D --> L([setting])
+  D --> M([state])
+  D --> N([country])
+  A --> C[task_1]
+  C --> J([name])
+  C --> K([description])
+```
+
+---
+
+```{mermaid}
+flowchart TD
+  A[person] --> I([id])
+  A --> B([birthdate])
+  A --> F([gender])
+  A --> G([language])
+  A --> L([race])
+  A --> M([ethnicity])
+  A --> N[session]
+  N --> Q([id])
+  N --> R([release])
+  N --> O([test date])
+  B ---|calculate|P([age])
+  O ---|calculate|P
+```
+
+## Folder
+
+![<https://databrary.org/volume/8>](include/img/vol-8-folder.png)
+
+## Participant
+
+![<https://databrary.org/volume/8>](include/img/vol-8-participant.png)
+
+## Group
+
+![<https://databrary.org/volume/8>](include/img/vol-8-group.png){width="80%"}
+
+## Task
+
+![<https://databrary.org/volume/8>](include/img/vol-8-task.png){width="80%"}
+
+## Context
+
+![<https://databrary.org/volume/8>](include/img/vol-8-context.png){width="80%"}
+
+## DB 1.0 spreadsheet functions
+
+- Data entry
+- Data capture
+- Data regularization/harmonization
+- Data visualization/exploration
+- "Tidy" (rectangular) export to CSV
+- Data for searching and filtering
+
+## Known problems
+
+- Data entry
+  - Duplicates effort; error prone; researchers capture info in other files
+  - Exact age + birthdate + testdate are identifiable; some IRBs won't allow users to enter birthdates
+- Data capture
+  - Inconsistent understanding, use, and documentation of constructs (e.g., gender, language)
+  - U.S.-biased (e.g., state, race, ethnicity)
+
+## Data regularization
+
+- *n*=153 (shared volumes) report [gender](https://databrary.github.io/analytics/participant-demographics.html#gender)
+- *n*=147 report [age](https://databrary.github.io/analytics/participant-demographics.html#age)
+- *n*=136 report [race](https://databrary.github.io/analytics/participant-demographics.html#race)
+- *n*=135 report [ethnicity](https://databrary.github.io/analytics/participant-demographics.html#ethnicity)
+- *n*=120 report [participant language](https://databrary.github.io/analytics/participant-demographics.html#participant-language)
+- *n*=87 report disability [disability](https://databrary.github.io/analytics/participant-demographics.html#disability)
+
+---
+
+- *n*=21 report [pregnancy term](https://databrary.github.io/analytics/participant-demographics.html#pregnancy-term)
+- *n*=3 report [birthweight](https://databrary.github.io/analytics/participant-demographics.html#birthweight)
+- *n*=2 report [country](https://databrary.github.io/analytics/participant-demographics.html#country)
+
+## Volume 8 CSV export
+
+```{r}
+#| label: vol-8-csv
+#| 
+vol_8 <- readr::read_csv("include/csv/databrary8-Tamis-LeMonda-Language,_cognitive,_and.csv", show_col_types = FALSE)
+names(vol_8)
+```
+
+<https://databrary.org/volume/8>
+
+## Data for searching and filtering
+
+:::: {.columns}
+::: {.column width="50%"}
+- Filtering only by age
+:::
+::: {.column width="50%"}
+![](include/img/search-filters.png){width="40%"}
+:::
+::::
+
+## How to proceed?
+
+- Keep existing data
+- Separate input from display
+
+## Display
+
+- Stored data as single table with sorting, filtering
+  - Drop multiple views (group, setting, task, context)
+  - Hide empty columns
+  
+## Input
+  
+- Keep manual input (for now)
+- Single tidy/rectangular table 
+  - Mandatory fields/columns only: participant (ID), session (release)
+  - Optionally add fields/columns: participant (birthdate) or participant (age); participant (gender, race, ethnicity)
+    
+## DB 2.0 vision
+
+- Redesign input/display features based on different [use cases](https://gilmore-lab.github.io/2024-08-27-montrose/index.html#/db-1.0-spreadsheet-functions)
+- Incorporate [schemas](https://databrary.github.io/guide/more-information/db-2.0.html#roadmap-2.0)
+- Create Databrary-wide GUID for individual participants
+- Better documentation of variables, metadata (question asked, etc.)
