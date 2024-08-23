@@ -6,6 +6,7 @@ format:
   revealjs:
     footer: "[Databrary 2.0 spreadsheet](index.html)"
     slide-number: true
+    logo: include/img/databrary-new-leaf.jpg
 ---
 
 ## Overview
@@ -66,6 +67,17 @@ flowchart TD
   O ---|calculate|P
 ```
 
+---
+
+```{mermaid}
+flowchart TD
+  A[pilot] --> B[session]
+  C[exclusion] --> D([reason])
+  D --> B
+  E[condition] --> B
+```
+
+
 ## Folder
 
 ![<https://databrary.org/volume/8>](include/img/vol-8-folder.png)
@@ -88,21 +100,52 @@ flowchart TD
 
 ## DB 1.0 spreadsheet functions
 
+:::: {.columns}
+::: {.column width="50%"}
 - Data entry
-- Data capture
-- Data regularization/harmonization
+- Data prompting
+- Data regularization & harmonization
+:::
+::: {.column width="50%"}
 - Data visualization/exploration
 - "Tidy" (rectangular) export to CSV
 - Data for searching and filtering
+:::
+::::
 
 ## Known problems
 
 - Data entry
   - Duplicates effort; error prone; researchers capture info in other files
   - Exact age + birthdate + testdate are identifiable; some IRBs won't allow users to enter birthdates
-- Data capture
+  - Session/person default org not a universal default
+  
+## Project file schemes
+
+```{r}
+source("R/twee.r")
+```
+  
+:::: {.columns}
+::: {.column width="50%"}
+```{r}
+twee("include/person-task")
+```
+:::
+::: {.column width="50%"}
+```{r}
+twee("include/task-person")
+```
+:::
+:::: 
+
+
+## Known problems
+
+- Data prompting
   - Inconsistent understanding, use, and documentation of constructs (e.g., gender, language)
   - U.S.-biased (e.g., state, race, ethnicity)
+  - Prompts not especially effective
 
 ## Data regularization
 
@@ -125,10 +168,17 @@ flowchart TD
 #| label: vol-8-csv
 #| 
 vol_8 <- readr::read_csv("include/csv/databrary8-Tamis-LeMonda-Language,_cognitive,_and.csv", show_col_types = FALSE)
+names(vol_8) <- stringr::str_replace(names(vol_8), "-", "_")
 names(vol_8)
 ```
 
 <https://databrary.org/volume/8>
+
+---
+
+```{r}
+xtabs(formula = ~ participant_gender + participant_race, data = vol_8)
+```
 
 ## Data for searching and filtering
 
@@ -163,5 +213,19 @@ names(vol_8)
 
 - Redesign input/display features based on different [use cases](https://gilmore-lab.github.io/2024-08-27-montrose/index.html#/db-1.0-spreadsheet-functions)
 - Incorporate [schemas](https://databrary.github.io/guide/more-information/db-2.0.html#roadmap-2.0)
-- Create Databrary-wide GUID for individual participants
+
+```{mermaid}
+flowchart LR
+A[Choose variables] ---> B[Prompt for schema]
+B ---> C[Select, enter, or upload schema]
+```
+
 - Better documentation of variables, metadata (question asked, etc.)
+
+## Support for BIDS?
+
+- Brain Imaging Data Structure ([BIDS](https://bids.neuroimaging.io))
+
+```{r}
+twee("include/bids-like")
+```

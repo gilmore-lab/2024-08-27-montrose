@@ -428,6 +428,25 @@ Rick Gilmore
 </div>
 </div>
 </section>
+<section class="slide level2">
+
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+  A[pilot] --&gt; B[session]
+  C[exclusion] --&gt; D([reason])
+  D --&gt; B
+  E[condition] --&gt; B
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
 <section id="folder" class="slide level2">
 <h2>Folder</h2>
 
@@ -450,14 +469,21 @@ Rick Gilmore
 <img data-src="include/img/vol-8-context.png" style="width:80.0%" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://databrary.org/volume/8" class="uri">https://databrary.org/volume/8</a></p></section>
 <section id="db-1.0-spreadsheet-functions" class="slide level2">
 <h2>DB 1.0 spreadsheet functions</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
 <ul>
 <li>Data entry</li>
-<li>Data capture</li>
-<li>Data regularization/harmonization</li>
+<li>Data prompting</li>
+<li>Data regularization &amp; harmonization</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
 <li>Data visualization/exploration</li>
 <li>“Tidy” (rectangular) export to CSV</li>
 <li>Data for searching and filtering</li>
 </ul>
+</div>
+</div>
 </section>
 <section id="known-problems" class="slide level2">
 <h2>Known problems</h2>
@@ -466,11 +492,46 @@ Rick Gilmore
 <ul>
 <li>Duplicates effort; error prone; researchers capture info in other files</li>
 <li>Exact age + birthdate + testdate are identifiable; some IRBs won’t allow users to enter birthdates</li>
+<li>Session/person default org not a universal default</li>
 </ul></li>
-<li>Data capture
+</ul>
+</section>
+<section id="project-file-schemes" class="slide level2">
+<h2>Project file schemes</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>-- person_1
+   |__task_1
+   |__task_2
+-- person_2
+   |__task_1
+   |__task_2</code></pre>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>-- task_1
+   |__person_1
+   |__person_2
+-- task_2
+   |__person_1
+   |__person_2</code></pre>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="known-problems-1" class="slide level2">
+<h2>Known problems</h2>
+<ul>
+<li>Data prompting
 <ul>
 <li>Inconsistent understanding, use, and documentation of constructs (e.g., gender, language)</li>
 <li>U.S.-biased (e.g., state, race, ethnicity)</li>
+<li>Prompts not especially effective</li>
 </ul></li>
 </ul>
 </section>
@@ -497,21 +558,36 @@ Rick Gilmore
 <h2>Volume 8 CSV export</h2>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] "session-id"            "session-name"          "session-date"         
- [4] "session-release"       "participant-ID"        "participant-birthdate"
- [7] "participant-gender"    "participant-race"      "participant-ethnicity"
-[10] "participant-language"  "group-name"            "task1-name"           
-[13] "task1-description"     "task2-name"            "task2-description"    
-[16] "task3-name"            "task3-description"     "task4-name"           
-[19] "task4-description"     "task5-name"            "task5-description"    
-[22] "task6-name"            "task6-description"     "task7-name"           
-[25] "task7-description"     "task8-name"            "task8-description"    
-[28] "task9-name"            "task9-description"     "task10-name"          
-[31] "task10-description"    "task11-name"           "task11-description"   
-[34] "context-setting"       "context-state"        </code></pre>
+<pre><code> [1] "session_id"            "session_name"          "session_date"         
+ [4] "session_release"       "participant_ID"        "participant_birthdate"
+ [7] "participant_gender"    "participant_race"      "participant_ethnicity"
+[10] "participant_language"  "group_name"            "task1_name"           
+[13] "task1_description"     "task2_name"            "task2_description"    
+[16] "task3_name"            "task3_description"     "task4_name"           
+[19] "task4_description"     "task5_name"            "task5_description"    
+[22] "task6_name"            "task6_description"     "task7_name"           
+[25] "task7_description"     "task8_name"            "task8_description"    
+[28] "task9_name"            "task9_description"     "task10_name"          
+[31] "task10_description"    "task11_name"           "task11_description"   
+[34] "context_setting"       "context_state"        </code></pre>
 </div>
 </div>
 <p><a href="https://databrary.org/volume/8" class="uri">https://databrary.org/volume/8</a></p>
+</section>
+<section class="slide level2">
+
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>                  participant_race
+participant_gender Asian Black or African American Unknown or not reported
+            Female   112                       341                       4
+            Male     111                       410                       2
+                  participant_race
+participant_gender White
+            Female   209
+            Male     155</code></pre>
+</div>
+</div>
 </section>
 <section id="data-for-searching-and-filtering" class="slide level2">
 <h2>Data for searching and filtering</h2>
@@ -558,10 +634,50 @@ Rick Gilmore
 <ul>
 <li>Redesign input/display features based on different <a href="https://gilmore-lab.github.io/2024-08-27-montrose/index.html#/db-1.0-spreadsheet-functions">use cases</a></li>
 <li>Incorporate <a href="https://databrary.github.io/guide/more-information/db-2.0.html#roadmap-2.0">schemas</a></li>
-<li>Create Databrary-wide GUID for individual participants</li>
+</ul>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+A[Choose variables] ---&gt; B[Prompt for schema]
+B ---&gt; C[Select, enter, or upload schema]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<ul>
 <li>Better documentation of variables, metadata (question asked, etc.)</li>
 </ul>
+</section>
+<section id="support-for-bids" class="slide level2">
+<h2>Support for BIDS?</h2>
+<ul>
+<li>Brain Imaging Data Structure (<a href="https://bids.neuroimaging.io">BIDS</a>)</li>
+</ul>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>-- person_1
+   |__session_1
+      |__task_1
+      |__task_2
+   |__session_2
+      |__task_1
+      |__task_2
+-- person_2
+   |__session_1
+      |__task_1
+      |__task_2
+   |__session_2
+      |__task_1
+      |__task_2</code></pre>
+</div>
+</div>
 <div class="quarto-auto-generated-content">
+<p><img src="include/img/databrary-new-leaf.jpg" class="slide-logo"></p>
 <div class="footer footer-default">
 <p><a href="index.html">Databrary 2.0 spreadsheet</a></p>
 </div>
