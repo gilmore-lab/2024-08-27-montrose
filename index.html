@@ -8,7 +8,7 @@
 <link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.549">
+  <meta name="generator" content="quarto-1.5.56">
 
   <meta name="author" content="Rick Gilmore">
   <title>Databrary spreadsheet</title>
@@ -323,6 +323,8 @@
   <script src="index_files/libs/quarto-diagram/mermaid.min.js"></script>
   <script src="index_files/libs/quarto-diagram/mermaid-init.js"></script>
   <link href="index_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
+  <script src="index_files/libs/kePrint-0.0.1/kePrint.js"></script>
+  <link href="index_files/libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -381,7 +383,6 @@ Rick Gilmore
 <div>
 <pre class="mermaid mermaid-js">flowchart TD
   E[person_1] --&gt; A[session]
-  N[person_2] -.-&gt; A
   A --&gt; G([id])
   A --&gt; I([release])
   A --&gt; F([test date])
@@ -430,6 +431,8 @@ Rick Gilmore
 </section>
 <section class="slide level2">
 
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="cell" data-reveal="true" data-layout-align="default">
 <div class="cell-output-display">
 <div>
@@ -446,6 +449,29 @@ Rick Gilmore
 </div>
 </div>
 </div>
+</div><div class="column" style="width:&quot;50%;">
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+  A[person_1] --&gt; B[session]
+  C(File_1) --&gt; A
+  C --&gt; B
+  D(File_2) --&gt; A
+  D --&gt; B
+  E(release) --&gt; C
+  F(release) --&gt; D
+  D --&gt; G[person_2]
+  G --&gt; B
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div></div>
 </section>
 <section id="folder" class="slide level2">
 <h2>Folder</h2>
@@ -482,8 +508,7 @@ Rick Gilmore
 <li>“Tidy” (rectangular) export to CSV</li>
 <li>Data for searching and filtering</li>
 </ul>
-</div>
-</div>
+</div></div>
 </section>
 <section id="known-problems" class="slide level2">
 <h2>Known problems</h2>
@@ -521,8 +546,7 @@ Rick Gilmore
    |__person_2</code></pre>
 </div>
 </div>
-</div>
-</div>
+</div></div>
 </section>
 <section id="known-problems-1" class="slide level2">
 <h2>Known problems</h2>
@@ -531,9 +555,76 @@ Rick Gilmore
 <ul>
 <li>Inconsistent understanding, use, and documentation of constructs (e.g., gender, language)</li>
 <li>U.S.-biased (e.g., state, race, ethnicity)</li>
-<li>Prompts not especially effective</li>
 </ul></li>
 </ul>
+</section>
+<section class="slide level2">
+
+<ul>
+<li>Prompts not especially effective</li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped caption-top" data-quarto-postprocess="true" style="font-size: 28px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">measure</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">n_vols</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">pct_of_shared</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">gender</td>
+<td style="text-align: right;">153</td>
+<td style="text-align: right;">44.35</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">age</td>
+<td style="text-align: right;">147</td>
+<td style="text-align: right;">42.61</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">race</td>
+<td style="text-align: right;">136</td>
+<td style="text-align: right;">39.42</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ethnicity</td>
+<td style="text-align: right;">135</td>
+<td style="text-align: right;">39.13</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">language</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">34.78</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">disability</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;">25.22</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pregnancy_term</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">6.09</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">birth weight</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0.87</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">country</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0.58</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
 </section>
 <section id="data-regularization" class="slide level2">
 <h2>Data regularization</h2>
@@ -557,35 +648,441 @@ Rick Gilmore
 <section id="volume-8-csv-export" class="slide level2">
 <h2>Volume 8 CSV export</h2>
 <div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code> [1] "session_id"            "session_name"          "session_date"         
- [4] "session_release"       "participant_ID"        "participant_birthdate"
- [7] "participant_gender"    "participant_race"      "participant_ethnicity"
-[10] "participant_language"  "group_name"            "task1_name"           
-[13] "task1_description"     "task2_name"            "task2_description"    
-[16] "task3_name"            "task3_description"     "task4_name"           
-[19] "task4_description"     "task5_name"            "task5_description"    
-[22] "task6_name"            "task6_description"     "task7_name"           
-[25] "task7_description"     "task8_name"            "task8_description"    
-[28] "task9_name"            "task9_description"     "task10_name"          
-[31] "task10_description"    "task11_name"           "task11_description"   
-[34] "context_setting"       "context_state"        </code></pre>
+<div class="cell-output-display">
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:500px; overflow-x: scroll; width:1000px; ">
+<table class="table table-striped caption-top" data-quarto-postprocess="true" style="font-size: 9px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" style="text-align: right; position: sticky; top: 0; background-color: #FFFFFF;">session_id</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">session_name</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">session_date</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">session_release</th>
+<th data-quarto-table-cell-role="th" style="text-align: right; position: sticky; top: 0; background-color: #FFFFFF;">participant_ID</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">participant_birthdate</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">participant_gender</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">participant_race</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">participant_ethnicity</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">participant_language</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">group_name</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task1_name</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task1_description</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task2_name</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task2_description</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task3_name</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task3_description</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task4_name</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task4_description</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task5_name</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task5_description</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task6_name</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task6_description</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task7_name</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task7_description</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task8_name</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task8_description</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task9_name</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task9_description</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task10_name</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task10_description</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task11_name</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task11_description</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">context_setting</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">context_state</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">190</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">2006-07-07</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3814</td>
+<td style="text-align: left;">2005-04-12</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Novel toy: string with beads</td>
+<td style="text-align: left;">Mother-child play with beads and string Mother-child dyads played with beads and string.</td>
+<td style="text-align: left;">Mother-child free play</td>
+<td style="text-align: left;">Child alone play with standard set of toys Mother-child dyads played with a set of toys for 8 minutes. Toys provided: baby blanket; teddy bear; wooden fruit puzzle; play camera; plastic book; baby bottle; purse containing keys, mirror, comb, lipstick; tray with dishes; ball; plastic foods in a container; wooden blocks in a container.</td>
+<td style="text-align: left;">Numeracy book</td>
+<td style="text-align: left;">Mother-child booksharing wordless number book Mothers shared a wordless number book with their children.</td>
+<td style="text-align: left;">Emotion book</td>
+<td style="text-align: left;">Mother-child booksharing wordless book of baby faces expressing emotions Mother-child dyads shared a wordless book of baby faces expressing different emotions called Baby Faces.</td>
+<td style="text-align: left;">Familiar toy</td>
+<td style="text-align: left;">Mother-child play interaction with child favorite toy Mother-child dyads played with the child's favorite toy.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">191</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">2006-XX-XX</td>
+<td style="text-align: left;">PRIVATE</td>
+<td style="text-align: right;">3811</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Novel toy: string with beads</td>
+<td style="text-align: left;">Mother-child play with beads and string Mother-child dyads played with beads and string.</td>
+<td style="text-align: left;">Mother-child free play</td>
+<td style="text-align: left;">Child alone play with standard set of toys Mother-child dyads played with a set of toys for 8 minutes. Toys provided: baby blanket; teddy bear; wooden fruit puzzle; play camera; plastic book; baby bottle; purse containing keys, mirror, comb, lipstick; tray with dishes; ball; plastic foods in a container; wooden blocks in a container.</td>
+<td style="text-align: left;">Numeracy book</td>
+<td style="text-align: left;">Mother-child booksharing wordless number book Mothers shared a wordless number book with their children.</td>
+<td style="text-align: left;">Emotion book</td>
+<td style="text-align: left;">Mother-child booksharing wordless book of baby faces expressing emotions Mother-child dyads shared a wordless book of baby faces expressing different emotions called Baby Faces.</td>
+<td style="text-align: left;">Familiar toy</td>
+<td style="text-align: left;">Mother-child play interaction with child favorite toy Mother-child dyads played with the child's favorite toy.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">192</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">2006-07-01</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3808</td>
+<td style="text-align: left;">2005-04-06</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Novel toy: string with beads</td>
+<td style="text-align: left;">Mother-child play with beads and string Mother-child dyads played with beads and string.</td>
+<td style="text-align: left;">Mother-child free play</td>
+<td style="text-align: left;">Child alone play with standard set of toys Mother-child dyads played with a set of toys for 8 minutes. Toys provided: baby blanket; teddy bear; wooden fruit puzzle; play camera; plastic book; baby bottle; purse containing keys, mirror, comb, lipstick; tray with dishes; ball; plastic foods in a container; wooden blocks in a container.</td>
+<td style="text-align: left;">Numeracy book</td>
+<td style="text-align: left;">Mother-child booksharing wordless number book Mothers shared a wordless number book with their children.</td>
+<td style="text-align: left;">Emotion book</td>
+<td style="text-align: left;">Mother-child booksharing wordless book of baby faces expressing emotions Mother-child dyads shared a wordless book of baby faces expressing different emotions called Baby Faces.</td>
+<td style="text-align: left;">Familiar toy</td>
+<td style="text-align: left;">Mother-child play interaction with child favorite toy Mother-child dyads played with the child's favorite toy.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">193</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">2006-XX-XX</td>
+<td style="text-align: left;">PRIVATE</td>
+<td style="text-align: right;">3806</td>
+<td style="text-align: left;">2005-03-23</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Unknown or not reported</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Novel toy: string with beads</td>
+<td style="text-align: left;">Mother-child play with beads and string Mother-child dyads played with beads and string.</td>
+<td style="text-align: left;">Mother-child free play</td>
+<td style="text-align: left;">Child alone play with standard set of toys Mother-child dyads played with a set of toys for 8 minutes. Toys provided: baby blanket; teddy bear; wooden fruit puzzle; play camera; plastic book; baby bottle; purse containing keys, mirror, comb, lipstick; tray with dishes; ball; plastic foods in a container; wooden blocks in a container.</td>
+<td style="text-align: left;">Numeracy book</td>
+<td style="text-align: left;">Mother-child booksharing wordless number book Mothers shared a wordless number book with their children.</td>
+<td style="text-align: left;">Emotion book</td>
+<td style="text-align: left;">Mother-child booksharing wordless book of baby faces expressing emotions Mother-child dyads shared a wordless book of baby faces expressing different emotions called Baby Faces.</td>
+<td style="text-align: left;">Familiar toy</td>
+<td style="text-align: left;">Mother-child play interaction with child favorite toy Mother-child dyads played with the child's favorite toy.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">194</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">2006-06-05</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3804</td>
+<td style="text-align: left;">2005-03-15</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Novel toy: string with beads</td>
+<td style="text-align: left;">Mother-child play with beads and string Mother-child dyads played with beads and string.</td>
+<td style="text-align: left;">Mother-child free play</td>
+<td style="text-align: left;">Child alone play with standard set of toys Mother-child dyads played with a set of toys for 8 minutes. Toys provided: baby blanket; teddy bear; wooden fruit puzzle; play camera; plastic book; baby bottle; purse containing keys, mirror, comb, lipstick; tray with dishes; ball; plastic foods in a container; wooden blocks in a container.</td>
+<td style="text-align: left;">Numeracy book</td>
+<td style="text-align: left;">Mother-child booksharing wordless number book Mothers shared a wordless number book with their children.</td>
+<td style="text-align: left;">Emotion book</td>
+<td style="text-align: left;">Mother-child booksharing wordless book of baby faces expressing emotions Mother-child dyads shared a wordless book of baby faces expressing different emotions called Baby Faces.</td>
+<td style="text-align: left;">Familiar toy</td>
+<td style="text-align: left;">Mother-child play interaction with child favorite toy Mother-child dyads played with the child's favorite toy.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">195</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">2006-05-26</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3803</td>
+<td style="text-align: left;">2005-03-07</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Novel toy: string with beads</td>
+<td style="text-align: left;">Mother-child play with beads and string Mother-child dyads played with beads and string.</td>
+<td style="text-align: left;">Mother-child free play</td>
+<td style="text-align: left;">Child alone play with standard set of toys Mother-child dyads played with a set of toys for 8 minutes. Toys provided: baby blanket; teddy bear; wooden fruit puzzle; play camera; plastic book; baby bottle; purse containing keys, mirror, comb, lipstick; tray with dishes; ball; plastic foods in a container; wooden blocks in a container.</td>
+<td style="text-align: left;">Numeracy book</td>
+<td style="text-align: left;">Mother-child booksharing wordless number book Mothers shared a wordless number book with their children.</td>
+<td style="text-align: left;">Emotion book</td>
+<td style="text-align: left;">Mother-child booksharing wordless book of baby faces expressing emotions Mother-child dyads shared a wordless book of baby faces expressing different emotions called Baby Faces.</td>
+<td style="text-align: left;">Familiar toy</td>
+<td style="text-align: left;">Mother-child play interaction with child favorite toy Mother-child dyads played with the child's favorite toy.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">196</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">2006-04-18</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3801</td>
+<td style="text-align: left;">2005-02-15</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Novel toy: string with beads</td>
+<td style="text-align: left;">Mother-child play with beads and string Mother-child dyads played with beads and string.</td>
+<td style="text-align: left;">Mother-child free play</td>
+<td style="text-align: left;">Child alone play with standard set of toys Mother-child dyads played with a set of toys for 8 minutes. Toys provided: baby blanket; teddy bear; wooden fruit puzzle; play camera; plastic book; baby bottle; purse containing keys, mirror, comb, lipstick; tray with dishes; ball; plastic foods in a container; wooden blocks in a container.</td>
+<td style="text-align: left;">Numeracy book</td>
+<td style="text-align: left;">Mother-child booksharing wordless number book Mothers shared a wordless number book with their children.</td>
+<td style="text-align: left;">Emotion book</td>
+<td style="text-align: left;">Mother-child booksharing wordless book of baby faces expressing emotions Mother-child dyads shared a wordless book of baby faces expressing different emotions called Baby Faces.</td>
+<td style="text-align: left;">Familiar toy</td>
+<td style="text-align: left;">Mother-child play interaction with child favorite toy Mother-child dyads played with the child's favorite toy.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">197</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">2006-XX-XX</td>
+<td style="text-align: left;">PRIVATE</td>
+<td style="text-align: right;">3800</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Novel toy: string with beads</td>
+<td style="text-align: left;">Mother-child play with beads and string Mother-child dyads played with beads and string.</td>
+<td style="text-align: left;">Mother-child free play</td>
+<td style="text-align: left;">Child alone play with standard set of toys Mother-child dyads played with a set of toys for 8 minutes. Toys provided: baby blanket; teddy bear; wooden fruit puzzle; play camera; plastic book; baby bottle; purse containing keys, mirror, comb, lipstick; tray with dishes; ball; plastic foods in a container; wooden blocks in a container.</td>
+<td style="text-align: left;">Numeracy book</td>
+<td style="text-align: left;">Mother-child booksharing wordless number book Mothers shared a wordless number book with their children.</td>
+<td style="text-align: left;">Emotion book</td>
+<td style="text-align: left;">Mother-child booksharing wordless book of baby faces expressing emotions Mother-child dyads shared a wordless book of baby faces expressing different emotions called Baby Faces.</td>
+<td style="text-align: left;">Familiar toy</td>
+<td style="text-align: left;">Mother-child play interaction with child favorite toy Mother-child dyads played with the child's favorite toy.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">198</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">2006-03-25</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3797</td>
+<td style="text-align: left;">2005-01-09</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Novel toy: string with beads</td>
+<td style="text-align: left;">Mother-child play with beads and string Mother-child dyads played with beads and string.</td>
+<td style="text-align: left;">Mother-child free play</td>
+<td style="text-align: left;">Child alone play with standard set of toys Mother-child dyads played with a set of toys for 8 minutes. Toys provided: baby blanket; teddy bear; wooden fruit puzzle; play camera; plastic book; baby bottle; purse containing keys, mirror, comb, lipstick; tray with dishes; ball; plastic foods in a container; wooden blocks in a container.</td>
+<td style="text-align: left;">Numeracy book</td>
+<td style="text-align: left;">Mother-child booksharing wordless number book Mothers shared a wordless number book with their children.</td>
+<td style="text-align: left;">Emotion book</td>
+<td style="text-align: left;">Mother-child booksharing wordless book of baby faces expressing emotions Mother-child dyads shared a wordless book of baby faces expressing different emotions called Baby Faces.</td>
+<td style="text-align: left;">Familiar toy</td>
+<td style="text-align: left;">Mother-child play interaction with child favorite toy Mother-child dyads played with the child's favorite toy.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">199</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">2006-03-19</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3796</td>
+<td style="text-align: left;">2005-01-15</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Novel toy: string with beads</td>
+<td style="text-align: left;">Mother-child play with beads and string Mother-child dyads played with beads and string.</td>
+<td style="text-align: left;">Mother-child free play</td>
+<td style="text-align: left;">Child alone play with standard set of toys Mother-child dyads played with a set of toys for 8 minutes. Toys provided: baby blanket; teddy bear; wooden fruit puzzle; play camera; plastic book; baby bottle; purse containing keys, mirror, comb, lipstick; tray with dishes; ball; plastic foods in a container; wooden blocks in a container.</td>
+<td style="text-align: left;">Numeracy book</td>
+<td style="text-align: left;">Mother-child booksharing wordless number book Mothers shared a wordless number book with their children.</td>
+<td style="text-align: left;">Emotion book</td>
+<td style="text-align: left;">Mother-child booksharing wordless book of baby faces expressing emotions Mother-child dyads shared a wordless book of baby faces expressing different emotions called Baby Faces.</td>
+<td style="text-align: left;">Familiar toy</td>
+<td style="text-align: left;">Mother-child play interaction with child favorite toy Mother-child dyads played with the child's favorite toy.</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+</tbody>
+</table>
+</div>
+
 </div>
 </div>
 <p><a href="https://databrary.org/volume/8" class="uri">https://databrary.org/volume/8</a></p>
 </section>
 <section class="slide level2">
 
+<ul>
+<li>Mostly “tidy” rectangular format</li>
+<li>Can be used to generate summary cross-tabulations</li>
+</ul>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code>                  participant_race
-participant_gender Asian Black or African American Unknown or not reported
-            Female   112                       341                       4
-            Male     111                       410                       2
-                  participant_race
-participant_gender White
-            Female   209
-            Male     155</code></pre>
+<pre><code>                           participant_gender
+participant_race            Female Male
+  Asian                        112  111
+  Black or African American    341  410
+  Unknown or not reported        4    2
+  White                        209  155</code></pre>
 </div>
 </div>
 </section>
@@ -598,8 +1095,7 @@ participant_gender White
 </ul>
 </div><div class="column" style="width:50%;">
 <p><img data-src="include/img/search-filters.png" style="width:40.0%"></p>
-</div>
-</div>
+</div></div>
 </section>
 <section id="how-to-proceed" class="slide level2">
 <h2>How to proceed?</h2>
@@ -963,18 +1459,7 @@ B ---&gt; C[Select, enter, or upload schema]
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -1006,7 +1491,47 @@ B ---&gt; C[Select, enter, or upload schema]
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
       function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
@@ -1043,7 +1568,11 @@ B ---&gt; C[Select, enter, or upload schema]
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          return note.innerHTML;
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
         });
       }
       const findCites = (el) => {

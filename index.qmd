@@ -34,7 +34,6 @@ flowchart TD
 ```{mermaid}
 flowchart TD
   E[person_1] --> A[session]
-  N[person_2] -.-> A
   A --> G([id])
   A --> I([release])
   A --> F([test date])
@@ -69,6 +68,8 @@ flowchart TD
 
 ---
 
+:::: {.columns}
+::: {.column width="50%"}
 ```{mermaid}
 flowchart TD
   A[pilot] --> B[session]
@@ -76,7 +77,22 @@ flowchart TD
   D --> B
   E[condition] --> B
 ```
-
+:::
+::: {.column width="50%}
+```{mermaid}
+flowchart TD
+  A[person_1] --> B[session]
+  C(File_1) --> A
+  C --> B
+  D(File_2) --> A
+  D --> B
+  E(release) --> C
+  F(release) --> D
+  D --> G[person_2]
+  G --> B
+```
+:::
+::::
 
 ## Folder
 
@@ -145,7 +161,19 @@ twee("include/task-person")
 - Data prompting
   - Inconsistent understanding, use, and documentation of constructs (e.g., gender, language)
   - U.S.-biased (e.g., state, race, ethnicity)
-  - Prompts not especially effective
+
+---
+
+- Prompts not especially effective
+  
+```{r}
+reported <- readr::read_csv("include/csv/spreadsheet.csv",show_col_types = FALSE)
+reported |>
+  dplyr::mutate(pct_of_shared = round((n_vols/345)*100, digits = 2)) |>
+  kableExtra::kable(format = 'html') |>
+  kableExtra::kable_styling(bootstrap_options = "striped", font_size = 28)
+```
+
 
 ## Data regularization
 
@@ -169,15 +197,22 @@ twee("include/task-person")
 #| 
 vol_8 <- readr::read_csv("include/csv/databrary8-Tamis-LeMonda-Language,_cognitive,_and.csv", show_col_types = FALSE)
 names(vol_8) <- stringr::str_replace(names(vol_8), "-", "_")
-names(vol_8)
+
+vol_8[1:10,] |>
+  kableExtra::kable(format = 'html') |>
+  kableExtra::kable_styling(bootstrap_options = "striped", font_size = 9) |>
+  kableExtra::scroll_box(width = "1000px", height = "500px")
 ```
 
 <https://databrary.org/volume/8>
 
 ---
 
+- Mostly "tidy" rectangular format
+- Can be used to generate summary cross-tabulations
+
 ```{r}
-xtabs(formula = ~ participant_gender + participant_race, data = vol_8)
+xtabs(formula = ~ participant_race + participant_gender, data = vol_8)
 ```
 
 ## Data for searching and filtering
