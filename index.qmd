@@ -164,7 +164,7 @@ twee("include/task-person")
 
 ---
 
-- Prompts not especially effective
+## Prompts not especially effective
   
 ```{r}
 reported <- readr::read_csv("include/csv/spreadsheet.csv",show_col_types = FALSE)
@@ -190,7 +190,13 @@ reported |>
 - *n*=3 report [birthweight](https://databrary.github.io/analytics/participant-demographics.html#birthweight)
 - *n*=2 report [country](https://databrary.github.io/analytics/participant-demographics.html#country)
 
-## Volume 8 CSV export
+## Data regularization
+
+- Works better for some variables than others.
+
+## [Volume 8](https://databrary.org/volume/8) CSV export
+
+*1st 100 entries, omitting task_\* and session_name columns*
 
 ```{r}
 #| label: vol-8-csv
@@ -198,13 +204,20 @@ reported |>
 vol_8 <- readr::read_csv("include/csv/databrary8-Tamis-LeMonda-Language,_cognitive,_and.csv", show_col_types = FALSE)
 names(vol_8) <- stringr::str_replace(names(vol_8), "-", "_")
 
-vol_8[1:10,] |>
+vol_8[1:100,] |>
+  dplyr::select(-contains("task"), -session_name) |>
   kableExtra::kable(format = 'html') |>
-  kableExtra::kable_styling(bootstrap_options = "striped", font_size = 9) |>
+  kableExtra::kable_styling(bootstrap_options = "striped", font_size = 10) |>
   kableExtra::scroll_box(width = "1000px", height = "500px")
 ```
 
-<https://databrary.org/volume/8>
+<!-- --- -->
+
+<!-- ```{r} -->
+<!-- vol_8[1:15,] |> -->
+<!--     dplyr::select(-contains("task"), -session_name) |> -->
+<!--     DT::datatable() -->
+<!-- ``` -->
 
 ---
 
@@ -229,7 +242,7 @@ xtabs(formula = ~ participant_race + participant_gender, data = vol_8)
 ## How to proceed?
 
 - Keep existing data
-- Separate input from display
+- Separate design challenges for input from those associated with data display
 
 ## Display
 

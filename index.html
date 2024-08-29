@@ -558,11 +558,8 @@ Rick Gilmore
 </ul></li>
 </ul>
 </section>
-<section class="slide level2">
-
-<ul>
-<li>Prompts not especially effective</li>
-</ul>
+<section id="prompts-not-especially-effective" class="slide level2">
+<h2>Prompts not especially effective</h2>
 <div class="cell">
 <div class="cell-output-display">
 <table class="table table-striped caption-top" data-quarto-postprocess="true" style="font-size: 28px; margin-left: auto; margin-right: auto;">
@@ -645,16 +642,22 @@ Rick Gilmore
 <li><em>n</em>=2 report <a href="https://databrary.github.io/analytics/participant-demographics.html#country">country</a></li>
 </ul>
 </section>
+<section id="data-regularization-1" class="slide level2">
+<h2>Data regularization</h2>
+<ul>
+<li>Works better for some variables than others.</li>
+</ul>
+</section>
 <section id="volume-8-csv-export" class="slide level2">
-<h2>Volume 8 CSV export</h2>
+<h2><a href="https://databrary.org/volume/8">Volume 8</a> CSV export</h2>
+<p><em>1st 100 entries, omitting task_* and session_name columns</em></p>
 <div class="cell">
 <div class="cell-output-display">
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:500px; overflow-x: scroll; width:1000px; ">
-<table class="table table-striped caption-top" data-quarto-postprocess="true" style="font-size: 9px; margin-left: auto; margin-right: auto;">
+<table class="table table-striped caption-top" data-quarto-postprocess="true" style="font-size: 10px; margin-left: auto; margin-right: auto;">
 <thead>
 <tr class="header">
 <th data-quarto-table-cell-role="th" style="text-align: right; position: sticky; top: 0; background-color: #FFFFFF;">session_id</th>
-<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">session_name</th>
 <th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">session_date</th>
 <th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">session_release</th>
 <th data-quarto-table-cell-role="th" style="text-align: right; position: sticky; top: 0; background-color: #FFFFFF;">participant_ID</th>
@@ -664,28 +667,6 @@ Rick Gilmore
 <th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">participant_ethnicity</th>
 <th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">participant_language</th>
 <th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">group_name</th>
-<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task1_name</th>
-<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task1_description</th>
-<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task2_name</th>
-<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task2_description</th>
-<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task3_name</th>
-<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task3_description</th>
-<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task4_name</th>
-<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task4_description</th>
-<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task5_name</th>
-<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task5_description</th>
-<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task6_name</th>
-<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task6_description</th>
-<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task7_name</th>
-<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task7_description</th>
-<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task8_name</th>
-<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task8_description</th>
-<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task9_name</th>
-<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task9_description</th>
-<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task10_name</th>
-<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task10_description</th>
-<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task11_name</th>
-<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">task11_description</th>
 <th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">context_setting</th>
 <th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">context_state</th>
 </tr>
@@ -693,7 +674,6 @@ Rick Gilmore
 <tbody>
 <tr class="odd">
 <td style="text-align: right;">190</td>
-<td style="text-align: left;">NA</td>
 <td style="text-align: left;">2006-07-07</td>
 <td style="text-align: left;">EXCERPTS</td>
 <td style="text-align: right;">3814</td>
@@ -703,34 +683,11 @@ Rick Gilmore
 <td style="text-align: left;">Dominican</td>
 <td style="text-align: left;">English</td>
 <td style="text-align: left;">14 month</td>
-<td style="text-align: left;">Novel toy: string with beads</td>
-<td style="text-align: left;">Mother-child play with beads and string Mother-child dyads played with beads and string.</td>
-<td style="text-align: left;">Mother-child free play</td>
-<td style="text-align: left;">Child alone play with standard set of toys Mother-child dyads played with a set of toys for 8 minutes. Toys provided: baby blanket; teddy bear; wooden fruit puzzle; play camera; plastic book; baby bottle; purse containing keys, mirror, comb, lipstick; tray with dishes; ball; plastic foods in a container; wooden blocks in a container.</td>
-<td style="text-align: left;">Numeracy book</td>
-<td style="text-align: left;">Mother-child booksharing wordless number book Mothers shared a wordless number book with their children.</td>
-<td style="text-align: left;">Emotion book</td>
-<td style="text-align: left;">Mother-child booksharing wordless book of baby faces expressing emotions Mother-child dyads shared a wordless book of baby faces expressing different emotions called Baby Faces.</td>
-<td style="text-align: left;">Familiar toy</td>
-<td style="text-align: left;">Mother-child play interaction with child favorite toy Mother-child dyads played with the child's favorite toy.</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
 <td style="text-align: left;">Home</td>
 <td style="text-align: left;">NY</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">191</td>
-<td style="text-align: left;">NA</td>
 <td style="text-align: left;">2006-XX-XX</td>
 <td style="text-align: left;">PRIVATE</td>
 <td style="text-align: right;">3811</td>
@@ -740,34 +697,11 @@ Rick Gilmore
 <td style="text-align: left;">Dominican</td>
 <td style="text-align: left;">English</td>
 <td style="text-align: left;">14 month</td>
-<td style="text-align: left;">Novel toy: string with beads</td>
-<td style="text-align: left;">Mother-child play with beads and string Mother-child dyads played with beads and string.</td>
-<td style="text-align: left;">Mother-child free play</td>
-<td style="text-align: left;">Child alone play with standard set of toys Mother-child dyads played with a set of toys for 8 minutes. Toys provided: baby blanket; teddy bear; wooden fruit puzzle; play camera; plastic book; baby bottle; purse containing keys, mirror, comb, lipstick; tray with dishes; ball; plastic foods in a container; wooden blocks in a container.</td>
-<td style="text-align: left;">Numeracy book</td>
-<td style="text-align: left;">Mother-child booksharing wordless number book Mothers shared a wordless number book with their children.</td>
-<td style="text-align: left;">Emotion book</td>
-<td style="text-align: left;">Mother-child booksharing wordless book of baby faces expressing emotions Mother-child dyads shared a wordless book of baby faces expressing different emotions called Baby Faces.</td>
-<td style="text-align: left;">Familiar toy</td>
-<td style="text-align: left;">Mother-child play interaction with child favorite toy Mother-child dyads played with the child's favorite toy.</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
 <td style="text-align: left;">Home</td>
 <td style="text-align: left;">NY</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">192</td>
-<td style="text-align: left;">NA</td>
 <td style="text-align: left;">2006-07-01</td>
 <td style="text-align: left;">EXCERPTS</td>
 <td style="text-align: right;">3808</td>
@@ -777,34 +711,11 @@ Rick Gilmore
 <td style="text-align: left;">Dominican</td>
 <td style="text-align: left;">English</td>
 <td style="text-align: left;">14 month</td>
-<td style="text-align: left;">Novel toy: string with beads</td>
-<td style="text-align: left;">Mother-child play with beads and string Mother-child dyads played with beads and string.</td>
-<td style="text-align: left;">Mother-child free play</td>
-<td style="text-align: left;">Child alone play with standard set of toys Mother-child dyads played with a set of toys for 8 minutes. Toys provided: baby blanket; teddy bear; wooden fruit puzzle; play camera; plastic book; baby bottle; purse containing keys, mirror, comb, lipstick; tray with dishes; ball; plastic foods in a container; wooden blocks in a container.</td>
-<td style="text-align: left;">Numeracy book</td>
-<td style="text-align: left;">Mother-child booksharing wordless number book Mothers shared a wordless number book with their children.</td>
-<td style="text-align: left;">Emotion book</td>
-<td style="text-align: left;">Mother-child booksharing wordless book of baby faces expressing emotions Mother-child dyads shared a wordless book of baby faces expressing different emotions called Baby Faces.</td>
-<td style="text-align: left;">Familiar toy</td>
-<td style="text-align: left;">Mother-child play interaction with child favorite toy Mother-child dyads played with the child's favorite toy.</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
 <td style="text-align: left;">Home</td>
 <td style="text-align: left;">NY</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">193</td>
-<td style="text-align: left;">NA</td>
 <td style="text-align: left;">2006-XX-XX</td>
 <td style="text-align: left;">PRIVATE</td>
 <td style="text-align: right;">3806</td>
@@ -814,34 +725,11 @@ Rick Gilmore
 <td style="text-align: left;">Unknown or not reported</td>
 <td style="text-align: left;">English</td>
 <td style="text-align: left;">14 month</td>
-<td style="text-align: left;">Novel toy: string with beads</td>
-<td style="text-align: left;">Mother-child play with beads and string Mother-child dyads played with beads and string.</td>
-<td style="text-align: left;">Mother-child free play</td>
-<td style="text-align: left;">Child alone play with standard set of toys Mother-child dyads played with a set of toys for 8 minutes. Toys provided: baby blanket; teddy bear; wooden fruit puzzle; play camera; plastic book; baby bottle; purse containing keys, mirror, comb, lipstick; tray with dishes; ball; plastic foods in a container; wooden blocks in a container.</td>
-<td style="text-align: left;">Numeracy book</td>
-<td style="text-align: left;">Mother-child booksharing wordless number book Mothers shared a wordless number book with their children.</td>
-<td style="text-align: left;">Emotion book</td>
-<td style="text-align: left;">Mother-child booksharing wordless book of baby faces expressing emotions Mother-child dyads shared a wordless book of baby faces expressing different emotions called Baby Faces.</td>
-<td style="text-align: left;">Familiar toy</td>
-<td style="text-align: left;">Mother-child play interaction with child favorite toy Mother-child dyads played with the child's favorite toy.</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
 <td style="text-align: left;">Home</td>
 <td style="text-align: left;">NY</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">194</td>
-<td style="text-align: left;">NA</td>
 <td style="text-align: left;">2006-06-05</td>
 <td style="text-align: left;">EXCERPTS</td>
 <td style="text-align: right;">3804</td>
@@ -851,34 +739,11 @@ Rick Gilmore
 <td style="text-align: left;">Dominican</td>
 <td style="text-align: left;">English</td>
 <td style="text-align: left;">14 month</td>
-<td style="text-align: left;">Novel toy: string with beads</td>
-<td style="text-align: left;">Mother-child play with beads and string Mother-child dyads played with beads and string.</td>
-<td style="text-align: left;">Mother-child free play</td>
-<td style="text-align: left;">Child alone play with standard set of toys Mother-child dyads played with a set of toys for 8 minutes. Toys provided: baby blanket; teddy bear; wooden fruit puzzle; play camera; plastic book; baby bottle; purse containing keys, mirror, comb, lipstick; tray with dishes; ball; plastic foods in a container; wooden blocks in a container.</td>
-<td style="text-align: left;">Numeracy book</td>
-<td style="text-align: left;">Mother-child booksharing wordless number book Mothers shared a wordless number book with their children.</td>
-<td style="text-align: left;">Emotion book</td>
-<td style="text-align: left;">Mother-child booksharing wordless book of baby faces expressing emotions Mother-child dyads shared a wordless book of baby faces expressing different emotions called Baby Faces.</td>
-<td style="text-align: left;">Familiar toy</td>
-<td style="text-align: left;">Mother-child play interaction with child favorite toy Mother-child dyads played with the child's favorite toy.</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
 <td style="text-align: left;">Home</td>
 <td style="text-align: left;">NY</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">195</td>
-<td style="text-align: left;">NA</td>
 <td style="text-align: left;">2006-05-26</td>
 <td style="text-align: left;">EXCERPTS</td>
 <td style="text-align: right;">3803</td>
@@ -888,34 +753,11 @@ Rick Gilmore
 <td style="text-align: left;">Dominican</td>
 <td style="text-align: left;">English</td>
 <td style="text-align: left;">14 month</td>
-<td style="text-align: left;">Novel toy: string with beads</td>
-<td style="text-align: left;">Mother-child play with beads and string Mother-child dyads played with beads and string.</td>
-<td style="text-align: left;">Mother-child free play</td>
-<td style="text-align: left;">Child alone play with standard set of toys Mother-child dyads played with a set of toys for 8 minutes. Toys provided: baby blanket; teddy bear; wooden fruit puzzle; play camera; plastic book; baby bottle; purse containing keys, mirror, comb, lipstick; tray with dishes; ball; plastic foods in a container; wooden blocks in a container.</td>
-<td style="text-align: left;">Numeracy book</td>
-<td style="text-align: left;">Mother-child booksharing wordless number book Mothers shared a wordless number book with their children.</td>
-<td style="text-align: left;">Emotion book</td>
-<td style="text-align: left;">Mother-child booksharing wordless book of baby faces expressing emotions Mother-child dyads shared a wordless book of baby faces expressing different emotions called Baby Faces.</td>
-<td style="text-align: left;">Familiar toy</td>
-<td style="text-align: left;">Mother-child play interaction with child favorite toy Mother-child dyads played with the child's favorite toy.</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
 <td style="text-align: left;">Home</td>
 <td style="text-align: left;">NY</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">196</td>
-<td style="text-align: left;">NA</td>
 <td style="text-align: left;">2006-04-18</td>
 <td style="text-align: left;">EXCERPTS</td>
 <td style="text-align: right;">3801</td>
@@ -925,34 +767,11 @@ Rick Gilmore
 <td style="text-align: left;">Dominican</td>
 <td style="text-align: left;">English</td>
 <td style="text-align: left;">14 month</td>
-<td style="text-align: left;">Novel toy: string with beads</td>
-<td style="text-align: left;">Mother-child play with beads and string Mother-child dyads played with beads and string.</td>
-<td style="text-align: left;">Mother-child free play</td>
-<td style="text-align: left;">Child alone play with standard set of toys Mother-child dyads played with a set of toys for 8 minutes. Toys provided: baby blanket; teddy bear; wooden fruit puzzle; play camera; plastic book; baby bottle; purse containing keys, mirror, comb, lipstick; tray with dishes; ball; plastic foods in a container; wooden blocks in a container.</td>
-<td style="text-align: left;">Numeracy book</td>
-<td style="text-align: left;">Mother-child booksharing wordless number book Mothers shared a wordless number book with their children.</td>
-<td style="text-align: left;">Emotion book</td>
-<td style="text-align: left;">Mother-child booksharing wordless book of baby faces expressing emotions Mother-child dyads shared a wordless book of baby faces expressing different emotions called Baby Faces.</td>
-<td style="text-align: left;">Familiar toy</td>
-<td style="text-align: left;">Mother-child play interaction with child favorite toy Mother-child dyads played with the child's favorite toy.</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
 <td style="text-align: left;">Home</td>
 <td style="text-align: left;">NY</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">197</td>
-<td style="text-align: left;">NA</td>
 <td style="text-align: left;">2006-XX-XX</td>
 <td style="text-align: left;">PRIVATE</td>
 <td style="text-align: right;">3800</td>
@@ -962,34 +781,11 @@ Rick Gilmore
 <td style="text-align: left;">Dominican</td>
 <td style="text-align: left;">English</td>
 <td style="text-align: left;">14 month</td>
-<td style="text-align: left;">Novel toy: string with beads</td>
-<td style="text-align: left;">Mother-child play with beads and string Mother-child dyads played with beads and string.</td>
-<td style="text-align: left;">Mother-child free play</td>
-<td style="text-align: left;">Child alone play with standard set of toys Mother-child dyads played with a set of toys for 8 minutes. Toys provided: baby blanket; teddy bear; wooden fruit puzzle; play camera; plastic book; baby bottle; purse containing keys, mirror, comb, lipstick; tray with dishes; ball; plastic foods in a container; wooden blocks in a container.</td>
-<td style="text-align: left;">Numeracy book</td>
-<td style="text-align: left;">Mother-child booksharing wordless number book Mothers shared a wordless number book with their children.</td>
-<td style="text-align: left;">Emotion book</td>
-<td style="text-align: left;">Mother-child booksharing wordless book of baby faces expressing emotions Mother-child dyads shared a wordless book of baby faces expressing different emotions called Baby Faces.</td>
-<td style="text-align: left;">Familiar toy</td>
-<td style="text-align: left;">Mother-child play interaction with child favorite toy Mother-child dyads played with the child's favorite toy.</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
 <td style="text-align: left;">Home</td>
 <td style="text-align: left;">NY</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">198</td>
-<td style="text-align: left;">NA</td>
 <td style="text-align: left;">2006-03-25</td>
 <td style="text-align: left;">EXCERPTS</td>
 <td style="text-align: right;">3797</td>
@@ -999,34 +795,11 @@ Rick Gilmore
 <td style="text-align: left;">Dominican</td>
 <td style="text-align: left;">English</td>
 <td style="text-align: left;">14 month</td>
-<td style="text-align: left;">Novel toy: string with beads</td>
-<td style="text-align: left;">Mother-child play with beads and string Mother-child dyads played with beads and string.</td>
-<td style="text-align: left;">Mother-child free play</td>
-<td style="text-align: left;">Child alone play with standard set of toys Mother-child dyads played with a set of toys for 8 minutes. Toys provided: baby blanket; teddy bear; wooden fruit puzzle; play camera; plastic book; baby bottle; purse containing keys, mirror, comb, lipstick; tray with dishes; ball; plastic foods in a container; wooden blocks in a container.</td>
-<td style="text-align: left;">Numeracy book</td>
-<td style="text-align: left;">Mother-child booksharing wordless number book Mothers shared a wordless number book with their children.</td>
-<td style="text-align: left;">Emotion book</td>
-<td style="text-align: left;">Mother-child booksharing wordless book of baby faces expressing emotions Mother-child dyads shared a wordless book of baby faces expressing different emotions called Baby Faces.</td>
-<td style="text-align: left;">Familiar toy</td>
-<td style="text-align: left;">Mother-child play interaction with child favorite toy Mother-child dyads played with the child's favorite toy.</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
 <td style="text-align: left;">Home</td>
 <td style="text-align: left;">NY</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">199</td>
-<td style="text-align: left;">NA</td>
 <td style="text-align: left;">2006-03-19</td>
 <td style="text-align: left;">EXCERPTS</td>
 <td style="text-align: right;">3796</td>
@@ -1036,28 +809,1266 @@ Rick Gilmore
 <td style="text-align: left;">Dominican</td>
 <td style="text-align: left;">English</td>
 <td style="text-align: left;">14 month</td>
-<td style="text-align: left;">Novel toy: string with beads</td>
-<td style="text-align: left;">Mother-child play with beads and string Mother-child dyads played with beads and string.</td>
-<td style="text-align: left;">Mother-child free play</td>
-<td style="text-align: left;">Child alone play with standard set of toys Mother-child dyads played with a set of toys for 8 minutes. Toys provided: baby blanket; teddy bear; wooden fruit puzzle; play camera; plastic book; baby bottle; purse containing keys, mirror, comb, lipstick; tray with dishes; ball; plastic foods in a container; wooden blocks in a container.</td>
-<td style="text-align: left;">Numeracy book</td>
-<td style="text-align: left;">Mother-child booksharing wordless number book Mothers shared a wordless number book with their children.</td>
-<td style="text-align: left;">Emotion book</td>
-<td style="text-align: left;">Mother-child booksharing wordless book of baby faces expressing emotions Mother-child dyads shared a wordless book of baby faces expressing different emotions called Baby Faces.</td>
-<td style="text-align: left;">Familiar toy</td>
-<td style="text-align: left;">Mother-child play interaction with child favorite toy Mother-child dyads played with the child's favorite toy.</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">2006-XX-XX</td>
+<td style="text-align: left;">PRIVATE</td>
+<td style="text-align: right;">3795</td>
 <td style="text-align: left;">NA</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">201</td>
+<td style="text-align: left;">2006-02-28</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3793</td>
+<td style="text-align: left;">2005-01-11</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">202</td>
+<td style="text-align: left;">2006-XX-XX</td>
+<td style="text-align: left;">PRIVATE</td>
+<td style="text-align: right;">3792</td>
 <td style="text-align: left;">NA</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">203</td>
+<td style="text-align: left;">2006-01-12</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3789</td>
+<td style="text-align: left;">2004-10-31</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">204</td>
+<td style="text-align: left;">2006-01-24</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3788</td>
+<td style="text-align: left;">2004-11-09</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">205</td>
+<td style="text-align: left;">2006-XX-XX</td>
+<td style="text-align: left;">PRIVATE</td>
+<td style="text-align: right;">3787</td>
+<td style="text-align: left;">2004-11-15</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">206</td>
+<td style="text-align: left;">2006-XX-XX</td>
+<td style="text-align: left;">PRIVATE</td>
+<td style="text-align: right;">3786</td>
 <td style="text-align: left;">NA</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">207</td>
+<td style="text-align: left;">2006-02-07</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3785</td>
+<td style="text-align: left;">2004-10-24</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Unknown or not reported</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">208</td>
+<td style="text-align: left;">2006-07-10</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3759</td>
+<td style="text-align: left;">2005-05-05</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">209</td>
+<td style="text-align: left;">2006-XX-XX</td>
+<td style="text-align: left;">PRIVATE</td>
+<td style="text-align: right;">3757</td>
 <td style="text-align: left;">NA</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">210</td>
+<td style="text-align: left;">2006-05-31</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3756</td>
+<td style="text-align: left;">2005-04-12</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">211</td>
+<td style="text-align: left;">2006-06-26</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3752</td>
+<td style="text-align: left;">2005-03-29</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">212</td>
+<td style="text-align: left;">2006-05-18</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3747</td>
+<td style="text-align: left;">2005-02-15</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">213</td>
+<td style="text-align: left;">2006-04-06</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3745</td>
+<td style="text-align: left;">2005-02-20</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">White</td>
+<td style="text-align: left;">Mexican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">214</td>
+<td style="text-align: left;">2006-05-01</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3742</td>
+<td style="text-align: left;">2005-03-16</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">215</td>
+<td style="text-align: left;">2006-XX-XX</td>
+<td style="text-align: left;">PRIVATE</td>
+<td style="text-align: right;">3739</td>
 <td style="text-align: left;">NA</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">216</td>
+<td style="text-align: left;">2006-03-27</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3738</td>
+<td style="text-align: left;">2005-02-05</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">217</td>
+<td style="text-align: left;">2006-XX-XX</td>
+<td style="text-align: left;">PRIVATE</td>
+<td style="text-align: right;">3737</td>
 <td style="text-align: left;">NA</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">218</td>
+<td style="text-align: left;">2006-04-18</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3736</td>
+<td style="text-align: left;">2005-02-03</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">219</td>
+<td style="text-align: left;">2006-03-31</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3735</td>
+<td style="text-align: left;">2005-01-30</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">220</td>
+<td style="text-align: left;">2006-03-06</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3734</td>
+<td style="text-align: left;">2005-01-23</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">White</td>
+<td style="text-align: left;">Mexican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">221</td>
+<td style="text-align: left;">2006-03-23</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3733</td>
+<td style="text-align: left;">2005-02-16</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">White</td>
+<td style="text-align: left;">Mexican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">222</td>
+<td style="text-align: left;">2006-04-27</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3732</td>
+<td style="text-align: left;">2005-02-09</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">223</td>
+<td style="text-align: left;">2006-03-30</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3731</td>
+<td style="text-align: left;">2005-01-11</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">224</td>
+<td style="text-align: left;">2006-03-06</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3730</td>
+<td style="text-align: left;">2005-01-12</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">225</td>
+<td style="text-align: left;">2006-03-09</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3728</td>
+<td style="text-align: left;">2005-01-04</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">226</td>
+<td style="text-align: left;">2006-03-19</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3726</td>
+<td style="text-align: left;">2005-01-04</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">227</td>
+<td style="text-align: left;">2006-09-08</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3725</td>
+<td style="text-align: left;">2004-12-15</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">228</td>
+<td style="text-align: left;">2006-05-18</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3723</td>
+<td style="text-align: left;">2004-12-14</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">White</td>
+<td style="text-align: left;">Mexican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">229</td>
+<td style="text-align: left;">2006-01-19</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3722</td>
+<td style="text-align: left;">2004-11-15</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">White</td>
+<td style="text-align: left;">Mexican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">230</td>
+<td style="text-align: left;">2006-05-11</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3721</td>
+<td style="text-align: left;">2004-11-14</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">231</td>
+<td style="text-align: left;">2006-XX-XX</td>
+<td style="text-align: left;">PRIVATE</td>
+<td style="text-align: right;">3719</td>
 <td style="text-align: left;">NA</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">232</td>
+<td style="text-align: left;">2006-01-09</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3718</td>
+<td style="text-align: left;">2004-11-16</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">233</td>
+<td style="text-align: left;">2006-01-14</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3716</td>
+<td style="text-align: left;">2004-11-07</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">234</td>
+<td style="text-align: left;">2006-XX-XX</td>
+<td style="text-align: left;">PRIVATE</td>
+<td style="text-align: right;">3714</td>
 <td style="text-align: left;">NA</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">235</td>
+<td style="text-align: left;">2006-XX-XX</td>
+<td style="text-align: left;">PRIVATE</td>
+<td style="text-align: right;">3712</td>
 <td style="text-align: left;">NA</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">236</td>
+<td style="text-align: left;">2006-04-21</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3711</td>
+<td style="text-align: left;">2004-11-08</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">237</td>
+<td style="text-align: left;">2006-02-07</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3708</td>
+<td style="text-align: left;">2004-11-03</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">White</td>
+<td style="text-align: left;">Mexican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">238</td>
+<td style="text-align: left;">2006-02-06</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3707</td>
+<td style="text-align: left;">2004-11-27</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">239</td>
+<td style="text-align: left;">2006-01-12</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3705</td>
+<td style="text-align: left;">2004-10-31</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">2006-01-05</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3704</td>
+<td style="text-align: left;">2004-10-26</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">241</td>
+<td style="text-align: left;">2005-12-05</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">3701</td>
+<td style="text-align: left;">2004-10-24</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">242</td>
+<td style="text-align: left;">2006-XX-XX</td>
+<td style="text-align: left;">PRIVATE</td>
+<td style="text-align: right;">2616</td>
 <td style="text-align: left;">NA</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Unknown or not reported</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">243</td>
+<td style="text-align: left;">2006-09-19</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">2609</td>
+<td style="text-align: left;">2005-06-15</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Unknown or not reported</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">244</td>
+<td style="text-align: left;">2006-07-05</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">2587</td>
+<td style="text-align: left;">2005-05-11</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Unknown or not reported</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">245</td>
+<td style="text-align: left;">2006-06-30</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">2586</td>
+<td style="text-align: left;">2005-04-25</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Unknown or not reported</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">246</td>
+<td style="text-align: left;">2006-07-01</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">2585</td>
+<td style="text-align: left;">2005-04-23</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Unknown or not reported</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">247</td>
+<td style="text-align: left;">2006-05-23</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">2580</td>
+<td style="text-align: left;">2005-03-30</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">248</td>
+<td style="text-align: left;">2006-06-09</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">2564</td>
+<td style="text-align: left;">2005-03-19</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Unknown or not reported</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">249</td>
+<td style="text-align: left;">2006-05-08</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">2559</td>
+<td style="text-align: left;">2005-03-15</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Unknown or not reported</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">250</td>
+<td style="text-align: left;">2006-05-25</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">2555</td>
+<td style="text-align: left;">2005-03-02</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Unknown or not reported</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">251</td>
+<td style="text-align: left;">2006-XX-XX</td>
+<td style="text-align: left;">PRIVATE</td>
+<td style="text-align: right;">2554</td>
 <td style="text-align: left;">NA</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">252</td>
+<td style="text-align: left;">2006-04-04</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">2552</td>
+<td style="text-align: left;">2005-02-24</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Unknown or not reported</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">253</td>
+<td style="text-align: left;">2006-04-11</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">2551</td>
+<td style="text-align: left;">2005-02-24</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Unknown or not reported</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">254</td>
+<td style="text-align: left;">2006-04-04</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">2550</td>
+<td style="text-align: left;">2005-02-14</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Unknown or not reported</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">255</td>
+<td style="text-align: left;">2006-03-29</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">2549</td>
+<td style="text-align: left;">2005-02-16</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Unknown or not reported</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">256</td>
+<td style="text-align: left;">2006-04-21</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">2547</td>
+<td style="text-align: left;">2005-02-18</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Unknown or not reported</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">257</td>
+<td style="text-align: left;">2006-07-16</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">2544</td>
+<td style="text-align: left;">2005-01-25</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Unknown or not reported</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">258</td>
+<td style="text-align: left;">2006-XX-XX</td>
+<td style="text-align: left;">PRIVATE</td>
+<td style="text-align: right;">2543</td>
 <td style="text-align: left;">NA</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Unknown or not reported</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">259</td>
+<td style="text-align: left;">2006-04-07</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">2542</td>
+<td style="text-align: left;">2005-01-18</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Unknown or not reported</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">260</td>
+<td style="text-align: left;">2006-03-14</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">2540</td>
+<td style="text-align: left;">2005-01-05</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Unknown or not reported</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">261</td>
+<td style="text-align: left;">2006-04-22</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">2538</td>
+<td style="text-align: left;">2005-02-11</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">262</td>
+<td style="text-align: left;">2006-XX-XX</td>
+<td style="text-align: left;">PRIVATE</td>
+<td style="text-align: right;">2536</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Unknown or not reported</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">263</td>
+<td style="text-align: left;">2006-03-15</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">2535</td>
+<td style="text-align: left;">2005-01-29</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Unknown or not reported</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">264</td>
+<td style="text-align: left;">2006-03-22</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">2534</td>
+<td style="text-align: left;">2005-01-30</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Unknown or not reported</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">265</td>
+<td style="text-align: left;">2006-XX-XX</td>
+<td style="text-align: left;">PRIVATE</td>
+<td style="text-align: right;">2532</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Unknown or not reported</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">266</td>
+<td style="text-align: left;">2006-03-23</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">2529</td>
+<td style="text-align: left;">2005-01-03</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Unknown or not reported</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">267</td>
+<td style="text-align: left;">2006-02-17</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">2525</td>
+<td style="text-align: left;">2004-12-19</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Unknown or not reported</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">268</td>
+<td style="text-align: left;">2006-02-22</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">2523</td>
+<td style="text-align: left;">2004-12-12</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Unknown or not reported</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">269</td>
+<td style="text-align: left;">2006-02-17</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">2520</td>
+<td style="text-align: left;">2004-12-11</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Unknown or not reported</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">270</td>
+<td style="text-align: left;">2006-03-08</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">2519</td>
+<td style="text-align: left;">2004-12-11</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Unknown or not reported</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">271</td>
+<td style="text-align: left;">2006-02-21</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">2517</td>
+<td style="text-align: left;">2004-12-12</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Unknown or not reported</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">272</td>
+<td style="text-align: left;">2006-XX-XX</td>
+<td style="text-align: left;">PRIVATE</td>
+<td style="text-align: right;">2515</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Unknown or not reported</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">273</td>
+<td style="text-align: left;">2006-01-30</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">2501</td>
+<td style="text-align: left;">2004-11-16</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Unknown or not reported</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">274</td>
+<td style="text-align: left;">2005-XX-XX</td>
+<td style="text-align: left;">PRIVATE</td>
+<td style="text-align: right;">1767</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">White</td>
+<td style="text-align: left;">Mexican</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">275</td>
+<td style="text-align: left;">2006-08-11</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">1762</td>
+<td style="text-align: left;">2005-06-27</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">White</td>
+<td style="text-align: left;">Mexican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">276</td>
+<td style="text-align: left;">2006-06-29</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">1257</td>
+<td style="text-align: left;">2005-05-10</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">White</td>
+<td style="text-align: left;">Mexican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">277</td>
+<td style="text-align: left;">2006-XX-XX</td>
+<td style="text-align: left;">PRIVATE</td>
+<td style="text-align: right;">1256</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">White</td>
+<td style="text-align: left;">Mexican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">278</td>
+<td style="text-align: left;">2006-09-13</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">1255</td>
+<td style="text-align: left;">2005-05-25</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">White</td>
+<td style="text-align: left;">Mexican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">279</td>
+<td style="text-align: left;">2006-07-06</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">1254</td>
+<td style="text-align: left;">2005-05-02</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">White</td>
+<td style="text-align: left;">Mexican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">280</td>
+<td style="text-align: left;">2006-05-22</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">1252</td>
+<td style="text-align: left;">2005-04-21</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">White</td>
+<td style="text-align: left;">Mexican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">281</td>
+<td style="text-align: left;">2006-06-19</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">1250</td>
+<td style="text-align: left;">2005-03-31</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">White</td>
+<td style="text-align: left;">Mexican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">282</td>
+<td style="text-align: left;">2006-05-16</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">1246</td>
+<td style="text-align: left;">2005-03-11</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">White</td>
+<td style="text-align: left;">Mexican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">283</td>
+<td style="text-align: left;">2006-04-20</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">1245</td>
+<td style="text-align: left;">2005-03-11</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">White</td>
+<td style="text-align: left;">Mexican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">284</td>
+<td style="text-align: left;">2006-08-27</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">1241</td>
+<td style="text-align: left;">2005-02-08</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Black or African American</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">285</td>
+<td style="text-align: left;">2006-08-30</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">1239</td>
+<td style="text-align: left;">2005-01-24</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">White</td>
+<td style="text-align: left;">Mexican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">286</td>
+<td style="text-align: left;">2006-03-20</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">1238</td>
+<td style="text-align: left;">2005-01-24</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">White</td>
+<td style="text-align: left;">Mexican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">287</td>
+<td style="text-align: left;">2006-03-06</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">1236</td>
+<td style="text-align: left;">2005-01-11</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">White</td>
+<td style="text-align: left;">Mexican</td>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">288</td>
+<td style="text-align: left;">2006-XX-XX</td>
+<td style="text-align: left;">PRIVATE</td>
+<td style="text-align: right;">1193</td>
+<td style="text-align: left;">2005-06-15</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">White</td>
+<td style="text-align: left;">Mexican</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
+<td style="text-align: left;">Home</td>
+<td style="text-align: left;">NY</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">289</td>
+<td style="text-align: left;">2006-09-14</td>
+<td style="text-align: left;">EXCERPTS</td>
+<td style="text-align: right;">1190</td>
+<td style="text-align: left;">2005-04-17</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">White</td>
+<td style="text-align: left;">Mexican</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">14 month</td>
 <td style="text-align: left;">Home</td>
 <td style="text-align: left;">NY</td>
 </tr>
@@ -1067,7 +2078,12 @@ Rick Gilmore
 
 </div>
 </div>
-<p><a href="https://databrary.org/volume/8" class="uri">https://databrary.org/volume/8</a></p>
+<!-- --- -->
+<!-- ```{r} -->
+<!-- vol_8[1:15,] |> -->
+<!--     dplyr::select(-contains("task"), -session_name) |> -->
+<!--     DT::datatable() -->
+<!-- ``` -->
 </section>
 <section class="slide level2">
 
@@ -1101,7 +2117,7 @@ participant_race            Female Male
 <h2>How to proceed?</h2>
 <ul>
 <li>Keep existing data</li>
-<li>Separate input from display</li>
+<li>Separate design challenges for input from those associated with data display</li>
 </ul>
 </section>
 <section id="display" class="slide level2">
